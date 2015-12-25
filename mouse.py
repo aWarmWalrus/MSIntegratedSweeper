@@ -20,13 +20,13 @@ class Mouse:
 		x1, y1 = (x0 + 8 + x * 16, y0 + 8 + y * 16)
 		self.pm.move(x1,y1)
 		self.pm.click(x1,y1,1)
-		#time.sleep(0.068)
+		#time.sleep(0.25)
 	
 	def right_click(self,x,y):
 		x0, y0 = self.vis.edge_coords
 		x1, y1 = (x0 + 8 + x * 16, y0 + 8 + y * 16)
 		self.pm.click(x1,y1,2)
-		#time.sleep(0.068)
+		#time.sleep(0.05)
 
 	""" Uses self._vis to determine the position of the smiley reset button"""
 	def reset_board(self):
